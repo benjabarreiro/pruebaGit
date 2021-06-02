@@ -1,0 +1,38 @@
+Podes elegir licencias cuando creas repo en GitHub:
+1. MIT --> libre de uso
+2. Otras --> te tienen que pedir permiso
+
+VINCULACIÓN REPOSITORIO GITHUB CON REPOSITORIO LOCAL
+Primera opcion:
+git clone + (url del repo) --> no haria falta hacer git init
+git status --> chequear que esté todo bien
+git add .
+git status --> chequear que esté todo bien
+git commit -m "Mensaje"
+git push origin (rama en la que este trabajando)
+
+Segunda opcion:
+crear carpeta
+git init
+git remote add origin + (url del repo)
+git status --> chequear que esté todo bien
+git add .
+git status --> chequear que esté todo bien
+git commit -m "Mensaje"
+git push origin (rama en la que este trabajando)
+
+
+ALGUNOS COMANDOS Y QUE HACEN:
+git branch --> lista las ramas
+git checkout (nombre de la rama) --> cambiar rama
+git checkout -b (nombre de la rama) --> crear rama
+
+git switch (nombre de la rama) --> cambiar de rama
+
+git log --> muestra todos los commits, quien los publicó y cuando lo hizo.
+
+git reset --hard --> vuelve al último commit. Borra todos los archivos de la carpeta que están incluídos en el git add
+git reset --> elimina los elementos contenidos dentro del git add, pero no los borra de la carpeta
+(una vez que haces el commit ya no podes usar el git reset para borrarlos, porque el git add estaría vacío)
+
+git rm (nombre del archivo) --> lo elimina de la carpeta
